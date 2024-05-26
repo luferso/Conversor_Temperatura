@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor de Temperatura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="box_dados">
+                <span><label for="">Temperatura: </label>
+                    <input type="number" placeholder="°C" id="temp_inicial" required></span>
+                <span><label for="">Converter para: </label>
+                    <select id="escalas">
+                        <option value="kelvin">K</option>
+                        <option value="fahrenheit">°F</option>
+                    </select></span>
+                <span><input type="submit" value="Converter" id="btt" onclick="coleta_dados()"></span>
+            </div>
+            <div id="box_resultado"></div>
+        </div>
+
+    </body>
+</html>
